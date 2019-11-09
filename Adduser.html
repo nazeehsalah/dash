@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>البرامج المتاحه</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="css/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="css/green.css" rel="stylesheet">
+    <!-- datatables -->
+    <link href="css/datatables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="css/fixedheader.bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="css/scroller.bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.rtl.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="css/custom.min.css" rel="stylesheet">
+    <link href="css/rlt.css" rel="stylesheet">
+    <style>
+    div.datatables_wrapper div.datatables_filter {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .datatables_filter {
+      float: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    @media print {
+      .center {
+        text-align: center;
+      }
+    }
+
+    .left_col {
+
+      width: 0px !important;
+    }
+
+    footer {
+      margin-left: 0
+    }
+
+    body {
+      background-color: #F7F7F7
+    }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    #content {
+      margin-top: 30px
+    }
+
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+      width: 100%
+    }
+
+    h1 {
+      margin-bottom: 50px !important;
+      margin-top: 50px !important
+    }
+
+    .item .alert {
+      float: none;
+      right: 0;
+      left: 0;
+      margin: 0;
+      display: none;
+      opacity: 1;
+      max-width: none;
+    }
+
+    .item .alert::after {
+      content: none;
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="container body">
+      <div class="main_container">
+        <h1 class="text-center h1">تسجيل مستخدم جديد</h1>
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <form class="form-horizontal form-label-left" id="user"
+              method="POST" action="#">
+
+              <span class="section">البيانات الشخصيه - Personal Infomation</span>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">اسم البرنامج - Program Name
+                  <span class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <select id="course-name" required="required"
+                    class="form-control" name="prog-name">
+
+                  </select>
+                </div>
+
+              </div>
+              <div class="item form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">الرقم المدنى - Civil No <span
+                    class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <input type="text" id="first-name2" required="required"
+                    class="form-control" name="civil-no">
+                  <div class="alert">لا تستطيع التسجيل لانك مشترك ف دوره فعاله</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">الاسم بالعربى - Name In Arabic
+                  <span class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <input type="text" id="first-name2" required="required"
+                    class="form-control" name="arabic-name">
+                </div>
+
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">الاسم باللغه الانجليزيه - Name
+                  In Engilsh <span class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <input type="text" id="first-name2" required="required"
+                    class="form-control" name="english-name">
+                </div>
+
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">رقم الهاتف - Phone Number <span
+                    class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <input type="tel" id="first-name2" required="required"
+                    class="form-control" name="phone">
+                </div>
+
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">البريد الالكترونى - E-mail <span
+                    class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <input type="email" id="first-name2" required="required"
+                    class="form-control" name="email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">الحاله - Status <span
+                    class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <select id="stauts" required="required"
+                    class="form-control" name="status">
+                    <option value="موظف">موظف</option>
+                    <option value="طالب">طالب</option>
+                    <option value="لايعمل">لا يعمل</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-offset-2 col-md-3 col-sm-3
+                  label-align" for="first-name">جهة العمل - Place Of Work<span
+                    class="required">*</span>
+                </label>
+                <div class="col-md-5 col-sm-12">
+                  <select id="ins-name" required="required" class="form-control"
+                    name="ins">
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="submit" id="saveuserbtn" class="btn btn-primary
+                    btn-block">اضافه
+                    مستخدم</button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-danger btn-block"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg">اضافه
+                    جهة عمل</button>
+                </div>
+
+              </div>
+            </form>
+            <div class="modal fade bs-example-modal-lg" tabindex="-1"
+              role="dialog" style="display: none;"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                      data-dismiss="modal"><span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">اضافه جهة عمل</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h3>من فضلك قم بادخال جميع البيانات</h3>
+                    <div class="item">
+                      <div class="alert">قم بادخال جميع البيانات</div>
+                    </div>
+                    <form class="form-horizontal form-label-left"
+                      id="addInsForm">
+                      <div class="form-group row">
+                        <label class="col-form-label col-lg-offset-2
+                          col-md-3 col-sm-3
+                          label-align" for="first-name">اسم جهة العمل باللغه
+                          العربيه<span class="required">*</span>
+                        </label>
+                        <div class="col-md-5 col-sm-12">
+                          <input type="text" id="first-name2"
+                            required="required" class="form-control"
+                            name="insNameAr">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-form-label col-lg-offset-2
+                          col-md-3 col-sm-3
+                          label-align" for="first-name">اسم جهة العمل باللغه
+                          الانجليزيه<span class="required">*</span>
+                        </label>
+                        <div class="col-md-5 col-sm-12">
+                          <input type="text" id="first-name2"
+                            required="required" class="form-control"
+                            name="insNameEn">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                      <button type="button" id="saveIns" class="btn
+                        btn-primary">Save
+                        changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a
+              href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/external/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/external/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <!-- FastClick -->
+    <script src="js/external/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="js/external/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="js/external/icheck.js"></script>
+    <!-- datatables -->
+    <script src="js/external/jquery.datatables.min.js"></script>
+    <script src="js/external/datatables.bootstrap.min.js"></script>
+    <script src="js/external/datatables.buttons.min.js"></script>
+    <script src="js/external/buttons.bootstrap.min.js"></script>
+    <script src="js/external/buttons.flash.min.js"></script>
+    <script src="js/external/buttons.html5.min.js"></script>
+    <script src="js/external/buttons.print.min.js"></script>
+    <script src="js/external/datatables.fixedheader.min.js"></script>
+    <script src="js/external//datatables.keytable.min.js"></script>
+    <script src="js/external/datatables.responsive.min.js"></script>
+    <script src="js/external/responsive.bootstrap.js"></script>
+    <script src="js/external/datatables.scroller.min.js"></script>
+    <script src="js/external/jszip.min.js"></script>
+    <script src="js/external/pdfmake.min.js"></script>
+    <script src="js/external/vfs_fonts.js"></script>
+
+
+    <!-- Custom Theme Scripts -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script src="js/external/custom.min.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/addUser.js"></script>
+
+  </body>
+
+</html>
