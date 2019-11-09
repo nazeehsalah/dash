@@ -7,7 +7,7 @@ $(function () {
 function content() {
   $("#content").empty();
   var found = true,
-    today = new Date("Tue Mar 26 2019") //new Date(),
+    today = new Date() //new Date(),
   coursesData = []
   // this code get run courses
   firebase.database().ref("/courses")
