@@ -43,16 +43,16 @@ $(function () {
         if (s.val() != null) {
           if (s.val().attendence != null) {
             s.val().attendence;
-            var sortedAttendence=[];
+            var sortedAttendence = [];
             Object.keys(s.val().attendence).forEach(function (dayKey) {
               sortedAttendence.push(new Date(dayKey));
             })
-            sortedAttendence.sort((a,b)=>a.getTime()-b.getTime())
-            sortedAttendence.forEach(function (dayKey,i) {
+            sortedAttendence.sort((a, b) => a.getTime() - b.getTime())
+            sortedAttendence.forEach(function (dayKey, i) {
               //console.log(i)
-              dayKey=dayKey.toDateString()
+              dayKey = dayKey.toDateString()
               //console.log(dayKey)
-              sortedAttendence[i]=dayKey
+              sortedAttendence[i] = dayKey
             })
             console.log(sortedAttendence)
             sortedAttendence.forEach(function (dayKey) {
@@ -75,7 +75,7 @@ $(function () {
                       tabelContent += '<td>' + (s.val().attendence[dayKey][userKey] != undefined ? '<img src="' + s.val().attendence[dayKey][userKey].atteendSign +
                         '" style="width: 75px;display:block">' : "لم يحضر") + '</td>'
 
-                        //<p>' + s.val().attendence[dayKey][userKey].attendTime + ' </p>
+                      //<p>' + s.val().attendence[dayKey][userKey].attendTime + ' </p>
                     })
                     tabelContent += '</tr>'
                     index++;
@@ -87,8 +87,7 @@ $(function () {
                     $("#datatable-buttons").length && $("#datatable-buttons").DataTable({
                       displayLength: 50,
                       dom: "Blfrtip",
-                      buttons: [
-                        {
+                      buttons: [{
                           extend: 'print',
                           exportOptions: {
                             stripHtml: false,
