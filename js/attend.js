@@ -70,6 +70,8 @@ $(function () {
                     tabelContent += '<tr>' +
                       '<td>' + index + '</td>' +
                       '<td>' + userdata.val().name + '</td>' +
+                      '<td>' + userdata.val().nameInEnglish + '</td>' +
+                      '<td>' + userdata.val().identity + '</td>' +
                       '<td>' + insdata[userdata.val().company].name + '</td>'
                     sortedAttendence.forEach(function (dayKey) {
                       tabelContent += '<td>' + (s.val().attendence[dayKey][userKey] != undefined ? '<img src="' + s.val().attendence[dayKey][userKey].atteendSign +
